@@ -1,0 +1,30 @@
+{
+  "model": "gemini-omni-flash-preview",
+  "duration": "4",
+  "clips": [
+    {
+      "id": "waiting-room",
+      "source": "02.jpg",
+      "aspect": "16:9",
+      "output": "waiting-room-16x9.mp4",
+      "use": "desktop hero",
+      "prompt": "<FIRST_FRAME> In a single continuous architectural shot, preserve this exact orthodontic waiting room and all of its furniture. Make a very slow, stabilized camera push toward the reception desk. Morning daylight shifts softly across the window shades and subtle dust motes move through the light. No people enter. Do not alter the floor plan, furniture, artwork, signs, or branding. No scene cuts, no dialogue, no music, no added objects. Consider micro-detail and timing to create an entirely natural scene."
+    },
+    {
+      "id": "waiting-room-mobile",
+      "source": "02.jpg",
+      "aspect": "9:16",
+      "output": "waiting-room-9x16.mp4",
+      "use": "mobile hero",
+      "prompt": "<FIRST_FRAME> Create a vertical crop of this exact orthodontic waiting room in one continuous architectural shot. Preserve the reception desk, chairs, windows, lighting, and room geometry. Make a very slow, stabilized camera push along the centre aisle while daylight shifts gently across the room. No people enter. Do not redesign, add, remove, or distort any architectural detail, furniture, sign, or branding. No scene cuts, no dialogue, no music. Natural restrained motion only."
+    },
+    {
+      "id": "treatment-studio",
+      "source": "04.jpg",
+      "aspect": "16:9",
+      "output": "treatment-studio-16x9.mp4",
+      "use": "trust scene",
+      "prompt": "<FIRST_FRAME> In one continuous shot, preserve this exact open orthodontic treatment studio. Make a barely perceptible stabilized lateral camera drift from left to right. Ceiling light reflections and daylight change naturally across the polished floor and equipment. Keep every chair, workstation, poster, wall, and cabinet fixed and faithful to the reference. No people, no scene cuts, no dialogue, no music, no invented equipment, no warped geometry. Quiet architectural realism."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "wilkandwilk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "npm run media:sync",
+    "dev": "next dev",
+    "prebuild": "npm run media:sync",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "media:sync": "mkdir -p public/media/animated && rsync -a --delete assets/interiors/ public/media/interiors/ && rsync -a --include='*.mp4' --exclude='*' assets/animated/ public/media/animated/ && cp assets/brand/logo.svg public/media/logo.svg",
+    "omni:interiors": "node scripts/omni-animate-interiors.mjs"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.544.0",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

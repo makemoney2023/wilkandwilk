@@ -1,0 +1,24 @@
+{
+  "pages_md": 31,
+  "raw_html": 31,
+  "images": 98,
+  "counts": {
+    "brand": 3,
+    "interiors": 12,
+    "staff": 6,
+    "other": 73,
+    "heroes": 4
+  },
+  "phones": [
+    "(519) 624-9455",
+    "(519) 716-8866"
+  ],
+  "email": "cambridgeinfo@wilkandwilk.com",
+  "address": "350 Conestoga Blvd., Unit A, Cambridge, ON N1R 7L7",
+  "blockers": [
+    "blog tag/category URLs 404",
+    "meet-dr-kevin-wilk 404",
+    "no exterior photos",
+    "TLS -k on scraper host"
+  ]
+}

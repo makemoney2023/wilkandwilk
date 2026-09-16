@@ -1,0 +1,40 @@
+{
+  "model": "gemini-omni-flash-preview",
+  "generatedAt": "2026-09-16T20:07:28.860Z",
+  "results": [
+    {
+      "id": "waiting-room",
+      "ok": true,
+      "output": "waiting-room-16x9.mp4",
+      "use": "desktop hero",
+      "aspect": "16:9",
+      "selectedProvider": "gemini_omni",
+      "interactionId": "v1_ChdvX2FxYXZ2SU03U1NqckVQMi0tMi1RZxIXb19hcWF2dklNN1NTanJFUDItLTItUWc",
+      "costUsd": 0.4,
+      "durationSeconds": 39.37
+    },
+    {
+      "id": "waiting-room-mobile",
+      "ok": true,
+      "output": "waiting-room-9x16.mp4",
+      "use": "mobile hero",
+      "aspect": "9:16",
+      "selectedProvider": "gemini_omni",
+      "interactionId": "v1_Chd6X2FxYXFIYUJKeTlqckVQeHA2cDhROBIXel9hcWFxSGFCSnk5anJFUHhwNnA4UTg",
+      "costUsd": 0.4,
+      "durationSeconds": 42.2
+    },
+    {
+      "id": "treatment-studio",
+      "ok": true,
+      "output": "treatment-studio-16x9.mp4",
+      "use": "trust scene",
+      "aspect": "16:9",
+      "selectedProvider": "gemini_omni",
+      "interactionId": "v1_ChctZmFxYXBiREJQUzhzT0lQbzgyZDJBaxIXLWZhcWFwYkRCUFM4c09JUG84MmQyQWs",
+      "costUsd": 0.4,
+      "durationSeconds": 41.11
+    }
+  ],
+  "costUsd": 1.2000000000000002
+}
