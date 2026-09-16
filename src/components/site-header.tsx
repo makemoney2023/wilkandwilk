@@ -17,12 +17,14 @@ export function SiteHeader() {
         {nav.map((item) => (
           <div className="nav-item" key={item.href}>
             <Link href={item.href}>{item.label}</Link>
-            <div className="nav-panel" role="group" aria-label={item.label}>
-              {item.children.map((child) => (
-                <Link href={child.href} key={child.href}>
-                  {child.label}
-                </Link>
-              ))}
+            <div className="nav-panel">
+              <div className="nav-panel-card" role="group" aria-label={item.label}>
+                {item.children.map((child) => (
+                  <Link href={child.href} key={child.href}>
+                    {child.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         ))}

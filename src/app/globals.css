@@ -81,25 +81,34 @@ a {
 
 .nav-item {
   position: relative;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
 }
 
 .nav-panel {
   position: absolute;
-  top: calc(100% + 0.85rem);
+  z-index: 60;
+  top: 100%;
   left: 50%;
   display: none;
   min-width: 14.5rem;
+  padding-top: 0.35rem;
+  transform: translateX(-50%);
+}
+
+.nav-panel-card {
+  display: grid;
   padding: 0.65rem;
   border: 1px solid var(--line);
   border-radius: 1.15rem;
   background: var(--surface);
   box-shadow: 0 1.5rem 3rem color-mix(in srgb, var(--ink) 12%, transparent);
-  transform: translateX(-50%);
 }
 
 .nav-item:hover .nav-panel,
 .nav-item:focus-within .nav-panel {
-  display: grid;
+  display: block;
 }
 
 .nav-panel a,
