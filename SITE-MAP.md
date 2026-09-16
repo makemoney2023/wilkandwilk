@@ -14,7 +14,20 @@ Redirects:
 - Forms: Sesame contact forms + external Jotform patient medical history
 - Patient portal: Sesame Communications patient portal cluster
 
-## Navigation hierarchy (header)
+## Rebuild header (current)
+
+Logo home · **Welcome** · **New Patients** · **Treatments** · **Referrals** · **Contact** · Patient Login · **Consultation**
+
+- **Welcome** → `/meet-the-doctors` — doctors, team, technology, community, culture
+- **New Patients** → `/what-sets-us-apart` — what sets us apart, first visit, payment, forms, office tour, smile gallery
+- **Treatments** → `/early-orthodontic-treatment` — nine treatment URLs
+- **Referrals** → `/dentist-referral` — dentist and self referral
+- **Contact** → `/contact-us` — contact and emergency care
+- **Consultation** → `/request-a-consultation`
+- Patient Login → Sesame portal (external)
+- Aliases: `/home` → `/`, `/meet-dr-brian-wilk` → `/meet-the-doctors`, `/cambridge-office` → `/contact-us`
+
+## Original navigation hierarchy (legacy)
 
 Observed top-level: **Home · Welcome · New Patients · Smile Gallery · Treatments · Emergency Care · Let's Talk · Request a Consultation**
 
@@ -68,35 +81,35 @@ Observed top-level: **Home · Welcome · New Patients · Smile Gallery · Treatm
 |------|-------|--------|-----------|
 | `/blog` | Our Blog - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/blog.md` |
 | `/blog/2021/04/welcome-to-our-blog` | Welcome to Our Blog! | 200 | `legacy-pages/blog-2021-04-welcome-to-our-blog.md` |
-| `/cambridge-office` | Contact Us - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/cambridge-office.md` |
-| `/contact-us` | Contact Us - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/contact-us.md` |
-| `/dentist-referral` | Dentist Referral - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/dentist-referral.md` |
-| `/early-orthodontic-treatment` | Early Orthodontic Treatment - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/early-orthodontic-treatment.md` |
-| `/emergency-care` | Emergency Care - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/emergency-care.md` |
-| `/first-visit` | First Visit - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/first-visit.md` |
-| `/for-adults` | For Adults - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/for-adults.md` |
-| `/for-teens` | For Teens - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/for-teens.md` |
-| `/` | Wilk & Wilk Orthodontics / Orthodontist Cambridge ON | 200 | `legacy-pages/home.md` |
-| `/invisalign-info` | Invisalign® Info - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/invisalign-info.md` |
-| `/meet-dr-brian-wilk` | Meet The Doctors - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/meet-dr-brian-wilk.md` |
-| `/meet-the-doctors` | Meet The Doctors - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/meet-the-doctors.md` |
-| `/meet-the-team` | Meet the Team - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/meet-the-team.md` |
-| `/office-tour` | Office Tour - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/office-tour.md` |
-| `/our-community` | Our Community - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/our-community.md` |
-| `/our-culture` | Our Culture - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/our-culture.md` |
-| `/our-technology` | Our Technology - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/our-technology.md` |
-| `/patient-forms` | Patient Forms - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/patient-forms.md` |
-| `/patient-instructions` | Patient Instructions - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/patient-instructions.md` |
-| `/payment-information` | Payment Information - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/payment-information.md` |
-| `/request-a-consultation` | Request a Consultation - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/request-a-consultation.md` |
-| `/self-referral` | Self Referral - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/self-referral.md` |
-| `/sitemap` | Site Map - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/sitemap.md` |
-| `/smile-gallery` | Smile Gallery - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/smile-gallery.md` |
-| `/surgical-orthodontics` | Surgical Orthodontics - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/surgical-orthodontics.md` |
-| `/types-of-appliances` | Types of Appliances - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/types-of-appliances.md` |
-| `/types-of-braces` | Types of Braces - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/types-of-braces.md` |
-| `/what-sets-us-apart` | What Sets Us Apart - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/what-sets-us-apart.md` |
-| `/wisdom-teeth` | Wisdom Teeth - Wilk & Wilk Orthodontics / Cambridge ON | 200 | `legacy-pages/wisdom-teeth.md` |
+| `/cambridge-office` | Contact Us | redirect to `/contact-us` | `legacy-pages/cambridge-office.md` |
+| `/contact-us` | Contact Wilk & Wilk | rebuilt | `legacy-pages/contact-us.md` |
+| `/dentist-referral` | Dentist Referral | rebuilt | `legacy-pages/dentist-referral.md` |
+| `/early-orthodontic-treatment` | Early Orthodontic Treatment | rebuilt | `legacy-pages/early-orthodontic-treatment.md` |
+| `/emergency-care` | Emergency Care | rebuilt | `legacy-pages/emergency-care.md` |
+| `/first-visit` | First Visit | rebuilt | `legacy-pages/first-visit.md` |
+| `/for-adults` | For Adults | rebuilt | `legacy-pages/for-adults.md` |
+| `/for-teens` | For Teens | rebuilt | `legacy-pages/for-teens.md` |
+| `/` | Wilk & Wilk Orthodontics | rebuilt | `legacy-pages/home.md` |
+| `/invisalign-info` | Invisalign Info | rebuilt | `legacy-pages/invisalign-info.md` |
+| `/meet-dr-brian-wilk` | Meet The Doctors | redirect to `/meet-the-doctors` | `legacy-pages/meet-dr-brian-wilk.md` |
+| `/meet-the-doctors` | Meet The Doctors | rebuilt | `legacy-pages/meet-the-doctors.md` |
+| `/meet-the-team` | Meet the Team | rebuilt | `legacy-pages/meet-the-team.md` |
+| `/office-tour` | Office Tour | rebuilt | `legacy-pages/office-tour.md` |
+| `/our-community` | Our Community | rebuilt | `legacy-pages/our-community.md` |
+| `/our-culture` | Our Culture | rebuilt | `legacy-pages/our-culture.md` |
+| `/our-technology` | Our Technology | rebuilt | `legacy-pages/our-technology.md` |
+| `/patient-forms` | Patient Forms | rebuilt | `legacy-pages/patient-forms.md` |
+| `/patient-instructions` | Patient Instructions | rebuilt | `legacy-pages/patient-instructions.md` |
+| `/payment-information` | Payment Information | rebuilt | `legacy-pages/payment-information.md` |
+| `/request-a-consultation` | Request a Consultation | rebuilt | `legacy-pages/request-a-consultation.md` |
+| `/self-referral` | Self Referral | rebuilt | `legacy-pages/self-referral.md` |
+| `/sitemap` | Site Map | rebuilt | `legacy-pages/sitemap.md` |
+| `/smile-gallery` | Smile Gallery | rebuilt scroll rail | `legacy-pages/smile-gallery.md` |
+| `/surgical-orthodontics` | Surgical Orthodontics | rebuilt | `legacy-pages/surgical-orthodontics.md` |
+| `/types-of-appliances` | Types of Appliances | rebuilt | `legacy-pages/types-of-appliances.md` |
+| `/types-of-braces` | Types of Braces | rebuilt | `legacy-pages/types-of-braces.md` |
+| `/what-sets-us-apart` | What Sets Us Apart | rebuilt | `legacy-pages/what-sets-us-apart.md` |
+| `/wisdom-teeth` | Wisdom Teeth | rebuilt | `legacy-pages/wisdom-teeth.md` |
 
 ## sitemap.xml URLs (26)
 All listed in XML were fetched successfully, plus extras: `/cambridge-office`, `/sitemap`, `/home`, `/blog`, `/blog/2021/04/welcome-to-our-blog`, `/meet-dr-brian-wilk`.

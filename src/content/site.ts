@@ -130,7 +130,16 @@ export const treatments = [
 ];
 
 export const navLinks = [
-  { label: "Our practice", href: "/meet-the-doctors" },
-  { label: "Treatments", href: "/types-of-braces" },
+  { label: "Welcome", href: "/meet-the-doctors" },
+  { label: "New Patients", href: "/what-sets-us-apart" },
+  { label: "Treatments", href: "/early-orthodontic-treatment" },
+  { label: "Referrals", href: "/dentist-referral" },
   { label: "Contact", href: "/contact-us" },
 ] as const;
+
+export function getSiteHeaderLinks() {
+  return [
+    ...navLinks,
+    { label: "Consultation", href: site.primaryCta.href },
+  ];
+}

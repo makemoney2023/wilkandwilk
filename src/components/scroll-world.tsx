@@ -8,7 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { navLinks, scrollActs, site, treatments } from "@/content/site";
+import { SiteFooter } from "@/components/site-footer";
+import { scrollActs, site, treatments } from "@/content/site";
 import { getRailDistance } from "@/lib/scroll-motion";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -173,7 +174,6 @@ export function ScrollWorld() {
 
   return (
     <main ref={root} className="scroll-world">
-      <Header />
       <svg
         className="smile-line"
         viewBox="0 0 100 100"
@@ -376,35 +376,8 @@ export function ScrollWorld() {
         </div>
       </section>
 
-      <footer>
-        {/* SVG is served directly to preserve the original brand artwork. */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/media/logo.svg" alt={site.name} width="234" height="70" />
-        <p>{site.address}</p>
-        <p>© {new Date().getFullYear()} Wilk & Wilk Orthodontics</p>
-      </footer>
+      <SiteFooter />
     </main>
-  );
-}
-
-function Header() {
-  return (
-    <header className="site-header">
-      <Link className="brand" href="/" aria-label="Wilk & Wilk home">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/media/logo.svg" alt="" width="168" height="50" />
-      </Link>
-      <nav aria-label="Primary navigation">
-        {navLinks.map((link) => (
-          <Link href={link.href} key={link.href}>
-            {link.label}
-          </Link>
-        ))}
-      </nav>
-      <Button asChild>
-        <Link href={site.primaryCta.href}>Consultation</Link>
-      </Button>
-    </header>
   );
 }
 

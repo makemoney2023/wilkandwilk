@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Manrope } from "next/font/google";
+import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
 const display = Manrope({
@@ -38,7 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${text.variable}`}>{children}</body>
+      <body className={`${display.variable} ${text.variable}`}>
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }

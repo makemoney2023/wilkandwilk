@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { scrollActs, site } from "./site";
+import { getSiteHeaderLinks, scrollActs, site } from "./site";
 
 describe("Wilk & Wilk scroll-world content", () => {
   it("builds a six-act journey with a single dominant peak", () => {
@@ -25,6 +25,17 @@ describe("Wilk & Wilk scroll-world content", () => {
   it("keeps the verified consultation and contact destinations", () => {
     expect(site.primaryCta.href).toBe("/request-a-consultation");
     expect(site.phone.href).toBe("tel:519-624-9455");
+  });
+
+  it("keeps the original primary navigation on every page", () => {
+    expect(getSiteHeaderLinks().map((link) => link.label)).toEqual([
+      "Welcome",
+      "New Patients",
+      "Treatments",
+      "Referrals",
+      "Contact",
+      "Consultation",
+    ]);
   });
 
   it("assigns responsive Omni clips only to scenes with static fallbacks", () => {

@@ -12,7 +12,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "media:sync": "mkdir -p public/media/animated && rsync -a --delete assets/interiors/ public/media/interiors/ && rsync -a --include='*.mp4' --exclude='*' assets/animated/ public/media/animated/ && cp assets/brand/logo.svg public/media/logo.svg",
+    "media:sync": "node scripts/media-sync.mjs",
     "omni:interiors": "node scripts/omni-animate-interiors.mjs"
   },
   "dependencies": {
